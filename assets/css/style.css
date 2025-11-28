@@ -17,8 +17,8 @@ ul{
 
  .container{
     width: 100%;
-    padding:0 367px;
-    max-width: 1920px;
+    padding:0 200px;
+    max-width:1490px;
     margin: 0 auto;
 }
 .header{
@@ -31,7 +31,6 @@ ul{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    text-align: center;
 }
 .header .left-side{
     display: flex;
@@ -75,6 +74,19 @@ ul{
 .search-form button img{
     width: 20px;
     margin: 8px;
+}
+.menu{
+    display: none;
+}
+
+@media screen and (min-width:0) and (max-width:990px) {
+    .list, .search-form{
+        display: none;
+    }
+    .menu{
+        display: block;
+    }
+
 }
 .hero{
     height: 9000px;
