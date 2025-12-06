@@ -1,3 +1,4 @@
+/*public side  */
 *{
     padding: 0;
     margin: 0;
@@ -18,9 +19,21 @@ ul{
  .container{
     width: 100%;
     padding:0 200px;
-    max-width:1490px;
+    max-width: 1920px;
     margin: 0 auto;
 }
+.btn{
+    border: none;
+    width: 51px;
+    background-color: var(--primarycolor);
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+/* end public side */
+/* start header */
 .header{
     padding: 47px 0 35px;
     font-family:var(--mainfont);
@@ -29,6 +42,7 @@ ul{
 }
 .header .container{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 }
@@ -37,7 +51,7 @@ ul{
     align-items: center;
     gap: 88px;
 }
-.left-side .logo{
+.logo{
     width: 98px;
     height: 34px;
 }
@@ -66,11 +80,7 @@ ul{
     border: none;
     width: 266px;
 }
-.search-form button{
-    border: none;
-    width: 51px;
-    background-color: var(--primarycolor);
-}
+
 .search-form button img{
     width: 20px;
     margin: 8px;
@@ -86,8 +96,81 @@ ul{
     .menu{
         display: block;
     }
-
+/* end header side */
+/* start hero side */
 }
 .hero{
-    height: 9000px;
+    height: 1200px;
 }
+/* end hero side */
+
+/* start footer side*/
+.footer{
+    background-color: #EEEFFB;
+    padding: 104.4px 0 112.18px;
+}
+.footer li a{
+    font-family: var(--mainfont);
+    color: #8A8FB9;
+    transition: 1s;
+}
+.footer li:hover{
+    font-size: 20px;
+}
+.footer .row{
+    gap: 71px;
+}
+.footer-left-side .row{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 34.43px;
+} 
+.footer-left-side ul{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 11.11px;
+}
+.footer-left-side form{
+    border: #EEEFFB;
+    display: flex;
+}
+.footer-left-side input{
+    border: 0;
+    width: 240px;
+    
+}
+.footer-left-side .btn{
+    width: 135px;
+    height: 43.32px;
+    color: #EEEFFB;
+    border-radius: 3px;
+    font-family: "Roboto", sans-serif;
+
+}
+
+.footer-right-side .row{
+    gap: 90px;
+    align-items: flex-start;
+}
+ .catagories .row ,.customer-care .row ,.pages .row {
+    flex-direction: column;
+    gap: 46px;
+
+}
+.footer-right-side h2{
+    font-family: "Josefin Sans", sans-serif;
+}
+.footer-right-side .row ul{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 23.2px;
+}
+@media screen and (min-width:0) and (max-width:990px){
+    .footer-right-side .row div{
+        width: 100%;
+    }
+}
+
+/* end footer side */
