@@ -92,16 +92,31 @@ h2{
     display: none;
 }
 
-@media screen and (min-width:0) and (max-width:990px) {
+@media screen and (min-width:0) and (max-width:590px) {
+    .container{
+        padding:0 15px;
+    }
     .list, .search-form{
         display: none;
     }
     .menu{
         display: block;
     }
+}
+@media screen and (min-width:591px) and (max-width:990px) {
+        .container{
+        padding:0 50px;
+    }
+    .list, .search-form{
+        display: none;
+    }
+    .menu{
+        display: block;
+    }
+}
 /* end header section */
 /* start hero section */
-}
+
 .hero{
     height: 1200px;
 }
@@ -111,17 +126,17 @@ h2{
     padding:174px 0 103px;
     background-image:url(../img/Rectangle\ 102.png);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
-.shop-new .row{
+.shop-new .row {
     flex-direction: column;
     text-align: center;
     gap: 28px;
-    width: 574px;
+    width:60vh;
 }
 .shop-new h2{
     font-size: 35px;
@@ -134,9 +149,25 @@ h2{
     font-family: "Josefin Sans", sans-serif;
 
 }
-@media screen and (min-width:0) and (max-width:990px){
+@media screen and (min-width:0) and (max-width:590px){
+    .shop-new .row{
+       width:30vh;
+     }
+    .shop-new h2{
+        font-size: 20px;
+    }
+    .shop-new .btn{
+    width: 100px;
+    } 
+}
+@media screen and (min-width:591px) and (max-width:990px){
+    .shop-new h2{
+        font-size: 25px;
+    }
+    .shop-new .btn{
+    width:100px;   
    
-  
+    }
 }
 /* end shop-new section */
 
@@ -202,9 +233,20 @@ h2{
     flex-direction: column;
     gap: 23.2px;
 }
-@media screen and (min-width:0) and (max-width:990px){
-    .footer-right-side .row div{
-        width: 100%;
+@media screen and (min-width:0) and (max-width:590px){
+
+    .footer-left-side .btn{
+        width: 40px;
+    }
+    .footer-left-side input{
+    width: 150px;
+    
+}
+}
+@media screen and (min-width:591px) and (max-width:990px){
+
+    .footer-left-side .btn{
+        width: 70px;
     }
 }
 
