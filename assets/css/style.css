@@ -103,7 +103,7 @@ h2{
         display: block;
     }
 }
-@media screen and (min-width:591px) and (max-width:990px) {
+@media screen and (min-width:590px) and (max-width:990px) {
         .container{
         padding:0 50px;
     }
@@ -121,6 +121,92 @@ h2{
     height: 1200px;
 }
 /* end hero section */
+/* start Featured Products section */
+.featured-products{
+    padding: 129px 0 53px;
+}
+.featured-products .row{
+    flex-direction: column;
+    gap: 48px;
+}
+.products-cards .row{
+    flex-direction: row;
+    gap: 29px;
+    align-items: center;
+    justify-content: center;
+}
+.featured-products h2{
+    font-size: 35px;
+    color: #151875;
+}
+.product{
+    box-shadow: 0 0 25px 0 #0000001A;
+}
+.product .row{
+    text-align: center;
+    flex-direction: column;
+    gap: 15px;
+}
+.product-img{
+    background-color: #F6F7FB;
+    width: 270px;
+    height: 236px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.products-details{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+}
+.products-details h3{
+    font-family: var(--mainfont);
+    color: var(--primarycolor);
+}
+.btn-color{
+    border: 0;
+    outline: 0;
+    width: 14px;
+    height: 4px;
+    border-radius: 10px;
+}
+.color-one{
+    background-color: #05E6B7;
+}
+.color-two{
+    background-color: #F701A8;
+}
+.color-three{
+  background-color:#00009D ;  
+}
+.product-info .row{
+    gap: 12px;
+    font-family: "Josefin Sans", sans-serif;
+    color: #151875;
+    font-size: 14px;
+    padding-bottom: 17px;
+}
+.product-info .row .price{
+    font-family: var(--mainfont);
+}
+@media screen and (min-width:0) and (max-width:590px){
+    .product{
+        width:calc(100% - 1);
+    }
+    
+
+}
+@media screen and (min-width:591px) and (max-width:990px){
+    .product{
+        width: calc(100% -29px /2);
+    }
+
+}
+
+
+/* end Featured Products section */
 /* start shop-new section */
 .shop-new{
     padding:174px 0 103px;
