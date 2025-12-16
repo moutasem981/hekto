@@ -102,6 +102,9 @@ h2{
     .menu{
         display: block;
     }
+    .header{
+        background-color:var(--primarycolor);
+    }
 }
 @media screen and (min-width:590px) and (max-width:990px) {
         .container{
@@ -118,7 +121,7 @@ h2{
 /* start hero section */
 
 .hero{
-    height: 1200px;
+    height: 700px;
 }
 /* end hero section */
 /* start Featured Products section */
