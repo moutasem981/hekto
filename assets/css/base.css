@@ -1,0 +1,42 @@
+/*public section  */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+h2{
+    font-family: "Josefin Sans", sans-serif;
+    color:var(--color-text)
+}
+:root{
+    --primarycolor:#FB2E86;
+    --color-text:#151875;
+    --color-background:#F2F0FF;
+    --mainfont: "Lato", sans-serif;
+
+
+}
+
+ .container{
+    width: 100%;
+    padding:0 200px;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+.btn{
+    border: none;
+    padding: 12px 39px;
+    background-color: var(--primarycolor);
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+/* end public section */

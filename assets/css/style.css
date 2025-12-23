@@ -1,47 +1,10 @@
-/*public section  */
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-a {
-    text-decoration: none;
-}
-ul{
-    list-style-type: none;
-}
-h2{
-    font-family: "Josefin Sans", sans-serif;
-}
-:root{
-    --primarycolor:#FB2E86;
-    --mainfont: "Lato", sans-serif;
 
-}
-
- .container{
-    width: 100%;
-    padding:0 200px;
-    max-width: 1920px;
-    margin: 0 auto;
-}
-.btn{
-    border: none;
-    width: 51px;
-    background-color: var(--primarycolor);
-}
-.row{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-}
-/* end public section */
 /* start header */
 .header{
     padding: 47px 0 35px;
     font-family:var(--mainfont);
-    position: fixed;
-    width: 100%;
+    position: sticky;
+    top: 0;
 }
 .header .container{
     display: flex;
@@ -75,7 +38,6 @@ h2{
 }
 .search-form form{
     display: flex;
-    margin-left: 227px;
     height: 40px;
     border: 1px solid #E7E6EF;
 }
@@ -83,11 +45,13 @@ h2{
     border: none;
     width: 266px;
 }
-
-.search-form button img{
-    width: 20px;
-    margin: 8px;
+.search-form button{
+    background-color: var(--primarycolor);
+    padding: 8px 13px;
+    text-align: center;
+    border: 0;
 }
+
 .menu{
     display: none;
 }
@@ -140,7 +104,6 @@ h2{
 }
 .featured-products h2{
     font-size: 35px;
-    color: #151875;
 }
 .product{
     box-shadow: 0 0 25px 0 #0000001A;
@@ -187,7 +150,7 @@ h2{
 .product-info .row{
     gap: 12px;
     font-family: "Josefin Sans", sans-serif;
-    color: #151875;
+    color:var(--color-text);
     font-size: 14px;
     padding-bottom: 17px;
 }
@@ -229,7 +192,6 @@ h2{
 }
 .shop-new h2{
     font-size: 35px;
-    color: #151875;
 }
 .shop-new .btn{
     width: 173px;
