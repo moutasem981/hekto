@@ -56,10 +56,7 @@
     display: none;
 }
 
-@media screen and (min-width:0) and (max-width:590px) {
-    .container{
-        padding:0 15px;
-    }
+@media screen and (min-width:0) and (max-width:660px) {
     .list, .search-form{
         display: none;
     }
@@ -70,23 +67,98 @@
         background-color:var(--primarycolor);
     }
 }
-@media screen and (min-width:590px) and (max-width:990px) {
-        .container{
-        padding:0 50px;
-    }
-    .list, .search-form{
-        display: none;
-    }
-    .menu{
-        display: block;
-    }
-}
+
 /* end header section */
 /* start hero section */
-
 .hero{
-    height: 700px;
+    background-color:var(--color-background);
+    padding:43px 0 32px;
 }
+.hero .row{
+    flex-wrap: nowrap;
+    gap: 82.92px;
+}
+.hero .hero-details{
+    width: calc((100% - 82.92px ) / 2 );
+
+}
+.hero .hero-details h1{
+    font-family:var(--fontmain2);
+    font-size: 53px;
+    line-height: 171%;
+    font-weight:700;
+    letter-spacing: 1.5%;
+    margin: 3px 0;
+
+}
+.hero-info span{
+    color: var(--color-text2);
+    display: block;
+    line-height: 28px;
+}
+.hero-details .Best-Furniture{
+    width: 50%;
+    color: var(--primarycolor);
+}
+.hero button{
+    margin-top: 7px;
+    font-family: var(--fontmain2);
+    color:#fff;
+    font-size: 17px;
+    font-weight: 600;
+}
+.hero-img{
+    width:calc((100% - 82.92px) /2);
+}
+.hero-img img{
+    width: 100%;
+}
+
+@media screen and (min-width:0px) and (max-width:660px){
+    .hero .row{
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        text-align: center;
+        gap: 20px;
+
+    }
+    .hero .hero-details{
+        width: 100%;
+        text-align: center;
+        
+    }
+    .hero .hero-img img{
+        width: 120%;
+    }
+    .hero .hero-details h1{
+        font-size: 30px;
+    }
+    .hero-info span{
+     display: none;
+}
+}
+ @media screen and (min-width:661px) and (max-width:1200px){
+    .hero .row{
+        justify-content: space-between;
+        gap:0;
+    }
+    .hero .hero-details{
+    width: 55%;
+    }
+    .hero .hero-img{
+    width: 40%;
+    }
+    .hero .hero-img img{
+    width: 100%;
+    }
+        .hero .hero-details h1{
+        font-size: 40px;
+    }
+
+}
+
+
 /* end hero section */
 /* start Featured Products section */
 .featured-products{
@@ -161,6 +233,9 @@
     .product{
         width:calc(100% - 1);
     }
+    .featured-products h2{
+        font-size: 25px;
+    }
     
 
 }
@@ -230,7 +305,7 @@
 }
 .footer li a{
     font-family: var(--mainfont);
-    color: #8A8FB9;
+    color:var(--color-text2) ;
     transition: 1s;
 }
 .footer li:hover{

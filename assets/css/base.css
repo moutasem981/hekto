@@ -10,22 +10,21 @@ a {
 ul{
     list-style-type: none;
 }
-h2{
-    font-family: "Josefin Sans", sans-serif;
-    color:var(--color-text)
-}
 :root{
     --primarycolor:#FB2E86;
     --color-text:#151875;
     --color-background:#F2F0FF;
+    --color-text2:#8A8FB9;
     --mainfont: "Lato", sans-serif;
-
-
+    --fontmain2:"Josefin Sans", sans-serif;
+}
+h2{
+    font-family:var(--fontmain2) ;
+    color:var(--color-text)
 }
 
  .container{
-    width: 100%;
-    padding:0 200px;
+    width: 75%;
     max-width: 1920px;
     margin: 0 auto;
 }
@@ -38,5 +37,20 @@ h2{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+}
+@media screen and (min-width:0) and (max-width:660px) {
+        .container{
+        width: 95%;
+    }
+}
+@media screen and (min-width:661px) and (max-width:1200px) {
+        .container{
+        width: 90%;
+    }
+}
+@media screen and (min-width:1201px) and (max-width:1500px) {
+        .container{
+        width: 80%;
+    }
 }
 /* end public section */
