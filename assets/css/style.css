@@ -401,53 +401,6 @@
     }
 }
 /* end Leatest Products section */
-
-/* start shop-new section */
-.shop-new{
-    padding:174px 0 103px;
-    background-image:url(../img/Rectangle\ 102.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-.shop-new .row {
-    flex-direction: column;
-    text-align: center;
-    gap: 28px;
-    width:60vh;
-}
-.shop-new .btn{
-    width: 173px;
-    height: 49px;
-    color: #FFFFFF;
-    font-family: "Josefin Sans", sans-serif;
-
-}
-@media screen and (min-width:0) and (max-width:590px){
-    .shop-new .row{
-       width:30vh;
-     }
-    .shop-new h2{
-        font-size: 20px;
-    }
-    .shop-new .btn{
-    width: 100px;
-    } 
-}
-@media screen and (min-width:591px) and (max-width:990px){
-    .shop-new h2{
-        font-size: 25px;
-    }
-    .shop-new .btn{
-    width:100px;   
-   
-    }
-}
-/* end shop-new section */
-
 /*start What Shopex Offer section*/
 .what-offer .row{
     text-align: center;
@@ -495,9 +448,98 @@ color: #1A0B5B4D;
     
 
 }
-
 /*end What Shopex Offer section*/
 
+
+/* start trending products section */
+.trending-products{
+    padding-top: 162px;
+    text-align: center;
+}
+.trending-products h2{
+    margin-bottom: 39px;
+}
+.trending-cards .row{
+    justify-content: center;
+    gap: 29px;
+}
+.card-trending {
+    padding: 11px 11px 0;
+    box-shadow: 0px 8px 40px 0px #31208A0D;
+}
+.trending-info .row{
+    flex-direction: column;
+    padding: 15px 0 32px;
+    gap: 8px;
+}
+.trending-info .row h3{
+font-family:var(--mainfont);
+font-weight: 700;
+font-size: 16px;
+color: var(--color-text);
+}
+.trending-info .price{
+    display: flex;
+    gap: 12px;
+    font-family:var(--fontmain2);
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--color-text);
+}
+.trending-info .price .old-price{
+font-family:var(--fontmain2);
+font-weight: 400;
+font-size: 12px;
+text-decoration: line-through;
+color: #1518754D;
+}
+/* end trending products section */
+
+/* start shop-new section */
+.shop-new{
+    padding:174px 0 103px;
+    background-image:url(../img/Rectangle\ 102.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.shop-new .row {
+    flex-direction: column;
+    text-align: center;
+    gap: 28px;
+    width:60vh;
+}
+.shop-new .btn{
+    width: 173px;
+    height: 49px;
+    color: #FFFFFF;
+    font-family: "Josefin Sans", sans-serif;
+
+}
+@media screen and (min-width:0) and (max-width:590px){
+    .shop-new .row{
+       width:30vh;
+     }
+    .shop-new h2{
+        font-size: 20px;
+    }
+    .shop-new .btn{
+    width: 100px;
+    } 
+}
+@media screen and (min-width:591px) and (max-width:990px){
+    .shop-new h2{
+        font-size: 25px;
+    }
+    .shop-new .btn{
+    width:100px;   
+   
+    }
+}
+/* end shop-new section */
 
 /* start footer section*/
 .footer{
