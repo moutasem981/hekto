@@ -5,6 +5,8 @@
     font-family:var(--mainfont);
     position: sticky;
     top: 0;
+    z-index: 1000;
+    background-color: #fff;
 }
 .header .container{
     display: flex;
@@ -162,7 +164,7 @@
 /* end hero section */
 /* start Featured Products section */
 .featured-products{
-    padding: 129px 0 53px;
+    padding: 129px 0 128px;
 }
 .featured-products .row{
     flex-direction: column;
@@ -173,9 +175,6 @@
     gap: 29px;
     align-items: center;
     justify-content: center;
-}
-.featured-products h2{
-    font-size: 35px;
 }
 .product{
     box-shadow: 0 0 25px 0 #0000001A;
@@ -212,6 +211,7 @@
 }
 .icon-shop{
     border-radius: 50%;
+    background-color:#0000000D ;
     box-shadow: 0px 0px 4px 0px #0000000D;
 }
 .product-img button{
@@ -288,8 +288,115 @@
 
 }
 
-
 /* end Featured Products section */
+/* start Leatest Products section */
+.leatest-products{
+    text-align: center;
+}
+.leatest-products .row{
+    flex-direction: column;
+    justify-content: center;
+    gap: 62px;
+}
+.leatest-list ul{
+    display: flex;
+    gap: 60px;
+    margin-top: 19px;
+    font-family: var(--mainfont);
+}
+.leatest-list a{
+    color: var(--color-text);
+    transition: .7s;
+}
+.leatest-list a:hover , .leatest-list a:focus{
+    color: var(--primarycolor);
+    border-bottom: 1px solid var(--primarycolor);
+}
+.leatest-products-card .row{
+    flex-direction: row;
+    column-gap: 37px;
+    row-gap: 120px;
+}
+.leatest-card .row{
+    gap: 15.59px;
+    flex-direction: column;
+}
+.leatest-img{
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    background-color: #F7F7F7;
+    width: 360px;
+    height: 269.96px;
+
+}
+.leatest-hover{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    opacity: 0;
+    transition: 1s;
+}
+.leatest-card :hover .leatest-hover{
+    opacity: 1;
+}
+.leatest-card :hover {
+    background-color: #fff;
+
+}
+.leatest-card :hover .img-handy-craft {
+    border: 1px solid #000000
+    
+}
+.img-handy-craft img{
+    width: 245px;
+    height: 245px;
+}
+.leatest-hover .sale{
+    position: absolute;
+    top: 25px;
+    left: 18px;
+}
+.leatest-hover .sale img{
+    width: 84.87px;
+}
+.leatest-icon{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    position: absolute;
+    bottom: 38px;
+    left: 24px;
+}
+.leatest-icon img{
+    width: 15px;
+
+}
+.leatest-info{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-family: var(--fontmain2);
+    color: var(--color-text);
+}
+.name-product{
+ border-bottom: 2px solid #EEEFFB;
+}
+.leatest-info .leatest-price{
+    display: flex;
+    align-items: center;
+    gap: 9.73px;
+    font-size: 14px;
+}
+.leatest-price .old-price{
+    font-size: 12px;
+    color: #FB2448;
+    text-decoration: line-through;
+}
+
+/* end Leatest Products section */
+
 /* start shop-new section */
 .shop-new{
     padding:174px 0 103px;
@@ -306,9 +413,6 @@
     text-align: center;
     gap: 28px;
     width:60vh;
-}
-.shop-new h2{
-    font-size: 35px;
 }
 .shop-new .btn{
     width: 173px;

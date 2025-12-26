@@ -20,7 +20,8 @@ ul{
 }
 h2{
     font-family:var(--fontmain2) ;
-    color:var(--color-text)
+    color:var(--color-text);
+    font-size: 35px;
 }
 
  .container{
