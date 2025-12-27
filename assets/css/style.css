@@ -215,19 +215,8 @@
     box-shadow: 0px 0px 4px 0px #0000000D;
 }
 .product-img button{
-    background-color: #08D15F;
-    color: #fff;
-    font-family: var(--fontmain2);
-    font-size: 12px;
-    font-weight: 500;
-    padding: 8px 13px;
-    border: 0;
-    outline: 0;
-    position: absolute;
     top: 198px;
     left: 95px;
-    opacity: 0;
-    transition: 1s;
 }
 .product:hover .product-icon , .product:hover button{
     opacity: 1;
@@ -396,8 +385,19 @@
 }
 
 @media screen and (min-width:0) and (max-width:660px){
+    .leatest-img{
+        width: 95%;
+    }
     .leatest-products-card .row{
         gap: 20px;
+    }
+    .leatest-list ul{
+       gap: 20px;
+    }
+    .leatest-info{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
     }
 }
 /* end Leatest Products section */
@@ -494,7 +494,54 @@ text-decoration: line-through;
 color: #1518754D;
 }
 /* end trending products section */
+/* start Top Categories section */
+.top-categories{
+    padding: 118px 0 115px;
+    text-align: center;
+}
+.top-categories-cards .row{
+    margin-top: 87px;
+    gap:39px ;
+    justify-content: center;
+}
+.categories-card .row{
+    flex-direction: column;
+    position: relative;
+}
+.img-categories{
+    box-shadow: 0px 8px 40px 0px #31208A0D;
+    padding: 60px 60px 50px;
+    border-radius: 50%;
+    background-color: var(--color-background);
+    transition: .5s;
+}
+.categories-card :hover .img-categories{
+    border-left: 7px solid #9877E7;
+    border-bottom: 7px solid #9877E7;
+}
+.categories-card button{
+    padding: 8px 18px;
+    top: 225px;
+    left: 105px;
+    opacity: 0;
+}
+.categories-card :hover button{
+    opacity: 1;
+}
+.top-categories-info{
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    font-family:var(--fontmain2);
+    font-weight: 400;
+    color: var(--color-text);
+}
+.top-categories-info h3{
+    font-size: 20px;
+}
 
+
+/* end Top Categories section */
 /* start shop-new section */
 .shop-new{
     padding:174px 0 103px;
@@ -540,6 +587,7 @@ color: #1518754D;
     }
 }
 /* end shop-new section */
+/* start  */
 
 /* start footer section*/
 .footer{

@@ -34,6 +34,19 @@ h2{
     padding: 12px 39px;
     background-color: var(--primarycolor);
 }
+ .btn-view{
+    background-color: #08D15F;
+    color: #fff;
+    font-family: var(--fontmain2);
+    font-size: 12px;
+    font-weight: 500;
+    padding: 8px 13px;
+    border: 0;
+    outline: 0;
+    position: absolute;
+    /* opacity: 0; */
+    transition: 1s;
+ }
 .row{
     display: flex;
     flex-wrap: wrap;
